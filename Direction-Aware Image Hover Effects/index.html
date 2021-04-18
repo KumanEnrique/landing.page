@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Direction Aware Image Hover Effects</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <span></span>
+            <div class="imgBox"><img src="pexels-daria-shevtsova-1237611.jpg" alt=""></div>
+            <div class="content">
+                <div>
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dolor! Nesciunt nostrum aspernatur voluptate distinctio, praesentium recusandae sunt minus possimus quibusdam provident enim iste beatae quaerat quo dignissimos ratione aperiam.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <span></span>
+            <div class="imgBox"><img src="pexels-max-avans-5065819.jpg" alt=""></div>
+            <div class="content">
+                <div>
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dolor! Nesciunt nostrum aspernatur voluptate distinctio, praesentium recusandae sunt minus possimus quibusdam provident enim iste beatae quaerat quo dignissimos ratione aperiam.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <span></span>
+            <div class="imgBox"><img src="pexels-shubh-lingwal-1154059.jpg" alt=""></div>
+            <div class="content">
+                <div>
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dolor! Nesciunt nostrum aspernatur voluptate distinctio, praesentium recusandae sunt minus possimus quibusdam provident enim iste beatae quaerat quo dignissimos ratione aperiam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.card').on("mouseenter",function(e){
+                x = e.pageX - $(this).offset().left
+                y = e.pageY - $(this).offset().top
+                $(this).find('span').css({top:y,left:x})
+            })
+            $('.card').on("mouseout",function(e){
+                x = e.pageX - $(this).offset().left
+                y = e.pageY - $(this).offset().top
+                $(this).find('span').css({top:y,left:x})
+            })
+        })
+    </script>
+</body>
+</html>

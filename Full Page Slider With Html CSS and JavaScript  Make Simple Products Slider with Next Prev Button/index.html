@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Product Slider</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Products</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <div class="imgBx">
+            <img src="img1.jpg" class="active">
+            <img src="img2.jpg" alt="">
+            <img src="img3.jpg" alt="">
+            <img src="img4.jpg" alt="">
+        </div>
+        <div class="contentBx">
+            <div class="active">
+                <h2>Slide Text 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, reprehenderit suscipit.</p>
+                <a href="#">Details</a>
+            </div>
+            <div>
+                <h2>Slide Text 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, atque rerum?</p>
+                <a href="#">Details</a>
+            </div>
+            <div>
+                <h2>Slide Text 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, non ipsum!</p>
+                <a href="#">Details</a>
+            </div>
+            <div>
+                <h2>Slide Text 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, repellat quaerat?</p>
+                <a href="#">Details</a>
+            </div>
+        </div>
+        <ul class="controls">
+            <li onclick="prevSlide();prevSlideText();"></li>
+            <li onclick="nextSlide();nextSlideText();"></li>
+        </ul>
+    </section>
+
+    <script>
+        const imgBx = document.querySelector('.imgBx')
+        const slides = imgBx.getElementsByTagName('img')
+        let i = 0
+
+        function nextSlide(){
+            slides[i].classList.remove('active')
+            i = (i + 1) % slides.length
+            slides[i].classList.add('active')
+        }
+        function prevSlide(){
+            slides[i].classList.remove('active')
+            i = (i - 1 + slides.length) % slides.length
+            slides[i].classList.add('active')
+        }
+
+
+
+        const contentBx = document.querySelector('.contentBx')
+        const slideText = contentBx.getElementsByTagName('div')
+        let j = 0
+
+        function nextSlideText(){
+            slideText[j].classList.remove('active')
+            j = (j + 1) % slideText.length
+            slideText[j].classList.add('active')
+        }
+        function prevSlideText(){
+            slideText[j].classList.remove('active')
+            j = (j - 1 + slideText.length) % slideText.length
+            slideText[j].classList.add('active')
+        }
+    </script>
+</body>
+</html>

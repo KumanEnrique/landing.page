@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sitio web de gimnasio </title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Fitness</a>
+            <div class="toggleMenu" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca</a></li>
+                <li><a href="#">Entrenadores</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="contentBx">
+                <h2>Construye un cuerpo perfecto <br>
+                Con mente limpia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum amet eligendi libero magni quos laborum tenetur qui, eaque ad ex delectus temporibus blanditiis debitis assumenda esse? Ullam id iure nemo.</p>
+                <a href="#">Empezar</a>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script>
+        function toggleMenu(){
+            const toggle = document.querySelector(".toggleMenu")
+            const navigation = document.querySelector(".navigation")
+            toggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
