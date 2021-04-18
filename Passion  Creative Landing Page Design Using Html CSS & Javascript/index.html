@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page Design</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div class="toggle"></div>
+        </header>
+        <div class="container">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="pexels-bestbe-models-2011414.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="pexels-jc-romero-3019358.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="pexels-nappy-935991.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="pexels-pixabay-458766.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="sci">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </section>
+    <script>
+       const imgBox = document.querySelectorAll('.imgBx')
+       imgBox.forEach(popup => popup.addEventListener('click',()=>{
+           popup.classList.toggle('active')
+       }))
+    </script>
+</body>
+</html>
