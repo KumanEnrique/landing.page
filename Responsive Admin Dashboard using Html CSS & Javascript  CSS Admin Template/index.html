@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Responsive Admin Dashboard</title>
+</head>
+<body>
+  <div class="container">
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-apple" aria-hidden="true"></i></span>
+            <span class="title"><h2>Brand Name</h2> </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+            <span class="title"><h2>Dashboard</h2> </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+            <span class="title"><h2>Customers</h2> </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-comment" aria-hidden="true"></i></span>
+            <span class="title"><h2>Message</h2> </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+            <span class="title"><h2>Help</h2> </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+            <span class="title"><h2>Settings</h2> </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+            <span class="title"><h2>Password</h2> </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+            <span class="title"><h2>Sign Out</h2> </span>
+          </a>
+        </li>
+      </ul>
+    </div><!-- fin navigation  min 6:26-->
+
+    <main>
+      <div class="topBar">
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <div class="search">
+          <label for="">
+            <input type="text" placeholder="Search here">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </label>
+        </div>
+        <div class="user">
+          <img src="img.jpg" alt="">
+        </div>
+      </div><!-- min 14:34 -->
+      <div class="cardBox">
+        <div class="card">
+          <div>
+            <div class="numbers">1,084</div>
+            <div class="cardName">Daily News</div>
+          </div>
+          <div class="iconBox">
+            <i class="fa fa-eye" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">1,324</div>
+            <div class="cardName">Sales</div>
+          </div>
+          <div class="iconBox">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">84</div>
+            <div class="cardName">Comments</div>
+          </div>
+          <div class="iconBox">
+            <i class="fa fa-comment" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">$5,084</div>
+            <div class="cardName">Earning</div>
+          </div>
+          <div class="iconBox">
+            <i class="fa fa-usd" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div><!-- min 29:18 -->
+
+      <div class="details">
+        <div class="recentOrders">
+          <div class="cardHeader">
+            <h2>Recent Orders</h2>
+            <a href="#" class="btn" role="button">View All</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Payment</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>star Refrigerator</td>
+                <td>$1,200</td>
+                <td>Paid</td>
+                <td><span class="status delivered">Delivered</span></td>
+              </tr>
+              <tr>
+                <td>Speakers</td>
+                <td>$200</td>
+                <td>Due</td>
+                <td><span class="status pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>Cellphone</td>
+                <td>$500</td>
+                <td>Paid</td>
+                <td><span class="status return">Return</span></td>
+              </tr>
+              <tr>
+                <td>star Refrigerator</td>
+                <td>$1,320</td>
+                <td>Due</td>
+                <td><span class="status inProgress">In Progress</span></td>
+              </tr>
+              <tr>
+                <td>star Refrigerator</td>
+                <td>$2,200</td>
+                <td>Due</td>
+                <td><span class="status delivered">Delivered</span></td>
+              </tr>
+              <tr>
+                <td>star Refrigerator</td>
+                <td>$200</td>
+                <td>Paid</td>
+                <td><span class="status pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>star Refrigerator</td>
+                <td>$1,000</td>
+                <td>Paid</td>
+                <td><span class="status return">Return</span></td>
+              </tr>
+              <tr>
+                <td>star Refrigerator</td>
+                <td>$1,300</td>
+                <td>Due</td>
+                <td><span class="status inProgress">In  Progress</span></td>
+              </tr>
+              <tr>
+                <td>star Refrigerator</td>
+                <td>$2,200</td>
+                <td>Due</td>
+                <td><span class="status delivered">Delivered</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- min 37:16 -->
+
+        <div class="recentCustomers">
+          <div class="cardHeader">
+            <h2>Recent Customers</h2>
+          </div>
+          <table>
+            <tbody>
+              <tr>
+                <td width="60px"><div class="imgBox"><img src="img/1.jpg" alt=""></div></td>
+                <td><h4>Sarah<br><span>Italy</span></h4></td>
+              </tr>
+              <tr>
+                <td width="60px"><div class="imgBox"><img src="img/2.jpg" alt=""></div></td>
+                <td><h4>Sarah<br><span>USA</span></h4></td>
+              </tr>
+              <tr>
+                <td width="60px"><div class="imgBox"><img src="img/3.jpg" alt=""></div></td>
+                <td><h4>Sarah<br><span>Mexico</span></h4></td>
+              </tr>
+              <tr>
+                <td width="60px"><div class="imgBox"><img src="img/4.jpg" alt=""></div></td>
+                <td><h4>Sarah<br><span>Spain</span></h4></td>
+              </tr>
+              <tr>
+                <td width="60px"><div class="imgBox"><img src="img/5.jpg" alt=""></div></td>
+                <td><h4>Sarah<br><span>France</span></h4></td>
+              </tr>
+              <tr>
+                <td width="60px"><div class="imgBox"><img src="img/6.jpg" alt=""></div></td>
+                <td><h4>Sarah<br><span>Italy</span></h4></td>
+              </tr>
+              <tr>
+                <td width="60px"><div class="imgBox"><img src="img/7.jpg" alt=""></div></td>
+                <td><h4>Sarah<br><span>Bankok</span></h4></td>
+              </tr>
+              <tr>
+                <td width="60px"><div class="imgBox"><img src="img/2.jpg" alt=""></div></td>
+                <td><h4>Sarah<br><span>USA</span></h4></td>
+              </tr>
+            </tbody>
+          </table><!-- min 50:00 -->
+        </div>
+      </div>
+    </main>
+    
+  </div>
+  <script>
+    function toggleMenu(){
+      const toggle = document.querySelector('.toggle')
+      const navigation = document.querySelector('.navigation')
+      const main = document.querySelector('main')
+      toggle.classList.toggle('active')
+      navigation.classList.toggle('active')
+      main.classList.toggle('active')
+    }
+  </script>
+</body>
+</html>
